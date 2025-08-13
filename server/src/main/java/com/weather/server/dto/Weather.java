@@ -11,4 +11,5 @@ public class Weather {
     private String city;
     private String description;
     private double temperature;
+    private String condition;
 }

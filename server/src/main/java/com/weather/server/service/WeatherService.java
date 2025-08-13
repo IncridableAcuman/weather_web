@@ -33,7 +33,7 @@ public class WeatherService {
         w.setCity(city);
         w.setTemperature(((Number) main.get("temp")).doubleValue());
         w.setDescription((String) weatherList.get(0).get("description"));
-
+        w.setCondition((String) weatherList.get(0).get("main"));
         return w;
     }
 }
