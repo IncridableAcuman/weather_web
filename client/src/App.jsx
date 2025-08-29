@@ -8,7 +8,7 @@ const App = () => {
   const handleWeather = async (e) => {
     e.preventDefault();
     try {
-      const {data} = await axios.get(`http://localhost:8080/api/weather/${city}`);
+      const {data} = await axios.get(`https://weather-web-backend.onrender.com/api/weather/${city}`);
       setWeatherData(data);  
     } catch (error) {
       console.error("Error fetching weather data:", error);
